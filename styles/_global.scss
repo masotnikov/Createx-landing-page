@@ -1,3 +1,16 @@
 body {
   font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-grey);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+h1,h2,h3,h4 {
+  font-weight: 900;
 }
