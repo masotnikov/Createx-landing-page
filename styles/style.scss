@@ -15,8 +15,8 @@
 
 
   &:hover {
-    transition-duration: var(--transition-duration);
-    color: #F75E05;
+    //transition-duration: var(--transition-duration);
+    color: var(--orange-color);
     background: transparent;
     border: var(--button-border-hover);
   }
@@ -26,6 +26,10 @@
   min-height: 100vh;
   background: var(--orange-background-color);
   padding-top: 20px;
+}
+
+.header__logo {
+  flex-shrink: 0;
 }
 
 .navbar {
@@ -53,13 +57,28 @@
 }
 
 .navbar__button-register {
+  display: flex;
+  column-gap: 8px;
   color: #424551;
   background: none;
+  padding: 0;
+
+  &::before {
+    content: '';
+    mask: url("../icons/Profile.svg") no-repeat center;
+    background-color: #424551; /* Исходный цвет иконки */
+    width: 24px;
+    height: 24px;
+  }
 
   &:hover {
     color: var(--light-grey);
     border: 1px solid transparent;
   }
 
+  &:hover::before {
+    background-color: var(--light-grey);
+  }
 }
+
 
