@@ -15,7 +15,6 @@
 
 
   &:hover {
-    //transition-duration: var(--transition-duration);
     color: var(--orange-color);
     background: transparent;
     border: var(--button-border-hover);
@@ -28,21 +27,22 @@
   padding-top: 20px;
 }
 
-.header__logo {
-  flex-shrink: 0;
-}
-
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 52px;
+}
+
+.header__logo {
+  flex-shrink: 0;
 }
 
 
 .navbar__menu-list {
   display: flex;
   column-gap: 40px;
+  padding-inline: 4px;
 }
 
 .navbar__menu-link {
@@ -53,20 +53,22 @@
 
 .navbar__actions {
   display: flex;
-  column-gap: 30px;
+  column-gap: 22px;
+
 }
+
 
 .navbar__button-register {
   display: flex;
   column-gap: 8px;
-  color: #424551;
+  color: var(--grey-color);
   background: none;
   padding: 0;
 
   &::before {
     content: '';
     mask: url("../icons/Profile.svg") no-repeat center;
-    background-color: #424551; /* Исходный цвет иконки */
+    background-color: currentColor;
     width: 24px;
     height: 24px;
   }
@@ -77,8 +79,55 @@
   }
 
   &:hover::before {
-    background-color: var(--light-grey);
+    background-color: currentColor;
   }
+}
+
+
+@media (max-width: 1280px) {
+  .button {
+    padding-inline: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: space-around;
+    row-gap: 5px;
+  }
+
+  .logo {
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+
+  .button {
+    font-size: 14px;
+    padding-inline: 4px;
+  }
+
+  .navbar__menu-list {
+    column-gap: 15px;
+  }
+  .navbar__actions {
+    column-gap: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navbar__button-register::before {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar__menu-list {
+    column-gap: 5px;
+  }
+
+
 }
 
 
