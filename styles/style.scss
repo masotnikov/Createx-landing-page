@@ -83,17 +83,10 @@
   }
 }
 
-
-@media (max-width: 1280px) {
-  .button {
-    padding-inline: 10px;
-  }
-}
-
 @media (max-width: 1024px) {
   .navbar {
     justify-content: space-around;
-    row-gap: 5px;
+    row-gap: 10px;
   }
 
   .logo {
@@ -108,15 +101,28 @@
   }
 
   .navbar__menu-list {
-    column-gap: 15px;
+    column-gap: 25px;
   }
   .navbar__actions {
-    column-gap: 0;
+    justify-content: space-around;
   }
 
 }
 
 @media (max-width: 768px) {
+  .button {
+    height: 35px;
+  }
+
+  .navbar__menu {
+    flex-basis: 100%;
+  }
+
+  .navbar__menu-list {
+    justify-content: space-around;
+    column-gap: 5px;
+  }
+
   .navbar__button-register::before {
     display: none;
   }
@@ -124,9 +130,8 @@
 
 @media (max-width: 425px) {
   .navbar__menu-list {
-    column-gap: 5px;
+    font-size: 14px;
   }
-
 
 }
 
