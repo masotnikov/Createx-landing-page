@@ -1,0 +1,26 @@
+.banner {
+  display: flex;
+  margin-top: 140px;
+  justify-content: space-between;
+
+  &__title {
+    margin-top: 24px;
+    max-width: 496px;
+    height: 249px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+
+  &__actions {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__play-button-container {
+    display: flex;
+    align-items: center;
+
+  }
+}

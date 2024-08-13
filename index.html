@@ -9,7 +9,7 @@
   <title>Createx</title>
 </head>
 <body>
-<header class="header">
+<header class="header wide-container">
   <div class="navbar container">
 
     <a href="/" class="logo header__logo">
@@ -44,16 +44,41 @@
     <div class="navbar__actions">
       <button
           type="button"
-          class="navbar__button-consultation button">Get consultation
+          class="button navbar__button-consultation ">Get consultation
       </button>
-      <button
-          type="button"
-          class="navbar__button-register button">Log in / Register
-      </button>
+      <div class="navbar__login-container">
+        <div class="login-icon"></div>
+        <button
+            type="button"
+            class="navbar__button-register">Log in / Register
+        </button>
+      </div>
     </div>
-
-
-
+    <!-- banner-->
+  </div>
+  <div class="banner container">
+    <div class="banner__info">
+      <div class="banner__play-button-container">
+        <button class="play-button">
+        </button>
+        <p class="play-button__text">Play showreel</p>
+      </div>
+      <h1 class="banner__title">
+        Enjoy studying with Createx Online Courses
+      </h1>
+      <div class="banner__actions">
+        <button class="about-button button">About us</button>
+        <button class="courses-button button">Explore courses</button>
+      </div>
+    </div>
+    <img
+        class="banner__illustartion"
+        loading="lazy"
+        height="551"
+        width="602"
+        src="./images/illustration.png"
+        alt="illustration"
+    >
   </div>
 </header>
 

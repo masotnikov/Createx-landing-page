@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__menu {
+
+    @include tablet {
+      flex-basis: 100%;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    column-gap: 40px;
+    padding-inline: 4px;
+
+    @include tablet {
+      justify-content: space-around;
+      column-gap: 5px;
+    }
+  }
+
+  &__menu-link {
+    display: inline-flex;
+    align-items: center;
+    height: 52px;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 22px;
+
+  }
+
+  &__login-container {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &:hover {
+      :nth-child(n) {
+        color: var(--light-grey);
+      }
+    }
+
+  }
+
+  &__button-register {
+    background: none;
+    padding: 0;
+    border: none;
+  }
+
+  .login-icon {
+    mask: url("../../icons/login-icon.svg") no-repeat center;
+    background-color: currentColor;
+    width: 24px;
+    height: 24px;
+    transition-duration: var(--transition-duration);
+
+  }
+
+
+}

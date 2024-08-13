@@ -1,0 +1,18 @@
+.play-button {
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: url("../../icons/Play-Button.svg") center no-repeat;
+
+  &:hover {
+    box-shadow: 0 0 0 16px rgba(#FF3F3A, .2);
+
+  }
+
+  &__text {
+    font-weight: 700;
+    padding-left: 14px;
+  }
+}

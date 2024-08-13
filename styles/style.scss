@@ -1,87 +1,14 @@
-@import "normalize", "global", "variables", "fonts";
+@import "normalize", "global", "variables", "fonts", "media";
 
-.button {
-  display: inline-flex;
-  height: 52px;
-  align-items: center;
-  border-radius: var(--button-border-radius);
-  background: var(--btn-background-color);
-  color: white;
-  font-weight: 700;
-  line-height: 3.2;
-  letter-spacing: 0.5px;
-  padding-inline: 40px;
-  border: 1px solid transparent;
+@import
+"blocks/button",
+"blocks/navbar",
+"blocks/header",
+"blocks/logo",
+"blocks/banner",
+"blocks/play-button"
+;
 
-
-  &:hover {
-    color: var(--orange-color);
-    background: transparent;
-    border: var(--button-border-hover);
-  }
-}
-
-.header {
-  min-height: 100vh;
-  background: var(--orange-background-color);
-  padding-top: 20px;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__logo {
-  flex-shrink: 0;
-}
-
-
-.navbar__menu-list {
-  display: flex;
-  column-gap: 40px;
-  padding-inline: 4px;
-}
-
-.navbar__menu-link {
-  display: inline-flex;
-  align-items: center;
-  height: 52px;
-}
-
-.navbar__actions {
-  display: flex;
-  column-gap: 22px;
-
-}
-
-
-.navbar__button-register {
-  display: flex;
-  column-gap: 8px;
-  color: var(--grey-color);
-  background: none;
-  padding: 0;
-
-  &::before {
-    content: '';
-    mask: url("../icons/Profile.svg") no-repeat center;
-    background-color: currentColor;
-    width: 24px;
-    height: 24px;
-  }
-
-  &:hover {
-    color: var(--light-grey);
-    border: 1px solid transparent;
-  }
-
-  &:hover::before {
-    background-color: currentColor;
-  }
-}
 
 @media (max-width: 1024px) {
   .navbar {
@@ -109,19 +36,27 @@
 
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
-  .button {
-    height: 35px;
-  }
+  //.button {
+  //  height: 35px;
+  //}
 
-  .navbar__menu {
-    flex-basis: 100%;
-  }
+  //.navbar__menu {
+  //  flex-basis: 100%;
+  //}
 
-  .navbar__menu-list {
-    justify-content: space-around;
-    column-gap: 5px;
-  }
+  //.navbar__menu-list {
+  //  justify-content: space-around;
+  //  column-gap: 5px;
+  //}
 
   .navbar__button-register::before {
     display: none;
