@@ -1,0 +1,47 @@
+.about {
+  padding: 180px 0;
+  background: var(--white-color);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 135px;
+  }
+
+  &__description {
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 48px;
+  }
+
+  &__item {
+    color: var(--grey-color);
+
+    &::before {
+      content: "";
+      display: inline-flex;
+      background: url("../../icons/check.svg") center no-repeat;
+      height: 15px;
+      width: 15px;
+      margin-right: 8px; /* Отступ справа для отделения иконки от текста */
+      vertical-align: center; /* Выравнивание иконки по центру строки */
+    }
+
+
+  }
+}

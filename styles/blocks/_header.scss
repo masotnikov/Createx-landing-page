@@ -2,4 +2,16 @@
   min-height: 100vh;
   background: var(--orange-background-gradient);
   padding-top: 20px;
+  padding-bottom: 80px;
+
+  &__banner {
+    margin-top: 140px;
+  }
+
+  &__statistics {
+    padding-top: 100px;
+  }
+
+
+
 }
