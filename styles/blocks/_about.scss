@@ -1,12 +1,9 @@
 .about {
   padding: 180px 0;
   background: var(--white-color);
+  display: flex;
+  column-gap: 80px;
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 135px;
-  }
 
   &__description {
     font-weight: 700;
@@ -35,13 +32,11 @@
     &::before {
       content: "";
       display: inline-flex;
-      background: url("../../icons/check.svg") center no-repeat;
-      height: 15px;
+      background: url("../../icons/check.svg") center/contain no-repeat;
       width: 15px;
-      margin-right: 8px; /* Отступ справа для отделения иконки от текста */
-      vertical-align: center; /* Выравнивание иконки по центру строки */
+      aspect-ratio: 1;
+      margin-right: 8px;
+      vertical-align: center;
     }
-
-
   }
 }

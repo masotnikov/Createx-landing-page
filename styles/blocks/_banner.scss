@@ -2,17 +2,20 @@
   display: flex;
   justify-content: space-between;
 
+  &__illustration {
+    background: url("../../images/illustration.png") center/contain no-repeat;
+    width: 551px;
+  }
+
   &__title {
     margin-top: 24px;
     max-width: 496px;
-    height: 249px;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 1.2;
+    font-size: clamp(32px, 3.33vw, 64px);
+    line-height: 1.3;
   }
 
   &__actions {
-    margin-top: 60px;
+    margin-top: 2vh;
     display: flex;
     column-gap: 24px;
   }

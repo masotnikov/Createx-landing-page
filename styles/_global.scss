@@ -12,12 +12,9 @@ body {
 }
 
 .wide-container {
-  max-width: calc(var(--wide-container-width) + var(--container-padding-x) * 2);
-  padding-inline: var(--container-padding-x);
+  max-width: var(--wide-container-width);
   margin-inline: auto;
 }
-
-
 
 h1, h2, h3, h4 {
   font-weight: 900;

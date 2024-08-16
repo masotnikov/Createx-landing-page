@@ -58,7 +58,7 @@
     mask: url("../../icons/login-icon.svg") no-repeat center;
     background-color: currentColor;
     width: 24px;
-    height: 24px;
+    aspect-ratio: 1;
     transition-duration: var(--transition-duration);
 
   }
