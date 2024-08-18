@@ -17,6 +17,11 @@
     border: var(--button-border-hover);
   }
 
+  @include laptop {
+    font-size: 14px;
+    padding-inline: 4px;
+  }
+
   @include tablet {
     height: 35px;
   }

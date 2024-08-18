@@ -4,9 +4,12 @@
   justify-content: space-between;
   align-items: center;
 
+  @include laptop {
+    justify-content: space-around;
+    row-gap: 10px;
+  }
 
   &__menu {
-
     @include tablet {
       flex-basis: 100%;
     }
@@ -17,9 +20,17 @@
     column-gap: 40px;
     padding-inline: 4px;
 
+    @include laptop {
+      column-gap: 25px;
+    }
+
     @include tablet {
       justify-content: space-around;
       column-gap: 5px;
+    }
+
+    @include mobile {
+      font-size: 14px;
     }
   }
 
@@ -32,6 +43,10 @@
   &__actions {
     display: flex;
     column-gap: 22px;
+
+    @include laptop {
+      justify-content: space-around;
+    }
 
   }
 
@@ -61,7 +76,9 @@
     aspect-ratio: 1;
     transition-duration: var(--transition-duration);
 
+    @include mobile {
+      display: none;
+    }
+
   }
-
-
 }

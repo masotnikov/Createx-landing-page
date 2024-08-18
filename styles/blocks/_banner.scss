@@ -5,6 +5,10 @@
   &__illustration {
     background: url("../../images/illustration.png") center/contain no-repeat;
     width: 551px;
+
+    @include above-mobile {
+      display: none;
+    }
   }
 
   &__title {
@@ -25,4 +29,6 @@
     align-items: center;
 
   }
+
+
 }

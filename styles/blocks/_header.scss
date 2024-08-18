@@ -4,11 +4,16 @@
   padding-bottom: 80px;
 
   &__banner {
-    margin-top: 140px;
+    margin-top: 8%;
   }
 
   &__statistics {
     padding-top: 100px;
+
+    @include tablet {
+      padding-top: 20px;
+
+      }
   }
 
 

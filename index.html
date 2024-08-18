@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./styles/style.css">
   <title>Createx</title>
 </head>
-<body>
-<header class="header wide-container">
+<body class="wide-container">
+<header class="header">
   <div class="navbar container">
     <a href="/" class="logo header__logo">
       <img
@@ -56,7 +56,9 @@
         <p class="play-button__text">Play showreel</p>
       </div>
       <h1 class="banner__title">
-        Enjoy studying with Createx Online Courses
+        Enjoy studying<br>
+        with Createx <br>
+        Online Courses
       </h1>
       <div class="banner__actions">
         <button type="button" class="about-button button">About us</button>
@@ -91,17 +93,12 @@
   </div>
 </header>
 <main>
-  <section class="about container">
-      <img
-          src="./images/about-image.png"
-          alt="about us image"
-          height="560"
-          width="705"
-          loading="lazy"
-      >
+  <section class="about">
+    <div class="about__inner container">
+      <div class="about__illustration"></div>
       <div class="about__info">
         <h6 class="about__description">Who we are</h6>
-        <h4 class="about__title">Why Createx?</h4>
+        <h1 class="about__title">Why Createx?</h1>
         <ul class="about__list">
           <li class="about__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
           <li class="about__item">Vulputate placerat amet pulvinar lorem nisl.</li>
@@ -112,7 +109,84 @@
         </ul>
         <button type="button" class="about__button button">More about us</button>
       </div>
-
+    </div>
+  </section>
+    <section class="courses">
+    <div class="courses__inner container">
+      <div class="courses__heading">
+        <h6 class="courses__description">Ready to learn?</h6>
+        <h1 class="courses__title">Featured Courses</h1>
+        <button class="courses__button button" type="button">View all courses</button>
+      </div>
+      <ul class="courses__card-list">
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2 class="card__title">The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2>The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2>The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2>The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2>The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+        <li class="courses__card card">
+          <img src="./images/courses__card-img.jpg" alt="courses image" class="card__image">
+          <div class="card__content">
+            <p class="card__budge"></p>
+            <h2>The Ultimate Google Ads Training Course</h2>
+            <div class="card__info">
+              <div class="card__price">$100</div>
+              <p class="card__speaker">by Jerome Bell</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
 

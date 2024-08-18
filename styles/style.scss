@@ -8,70 +8,12 @@
 "blocks/banner",
 "blocks/play-button",
 "blocks/statistics",
-"blocks/about"
+"blocks/about",
+"blocks/courses",
+"blocks/card"
 ;
 
-
-@media (max-width: 1024px) {
-  .navbar {
-    justify-content: space-around;
-    row-gap: 10px;
-  }
-
-  .logo {
-    display: inline-flex;
-    justify-content: center;
-    flex-basis: 100%;
-  }
-
-  .button {
-    font-size: 14px;
-    padding-inline: 4px;
-  }
-
-  .navbar__menu-list {
-    column-gap: 25px;
-  }
-  .navbar__actions {
-    justify-content: space-around;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  //.button {
-  //  height: 35px;
-  //}
-
-  //.navbar__menu {
-  //  flex-basis: 100%;
-  //}
-
-  //.navbar__menu-list {
-  //  justify-content: space-around;
-  //  column-gap: 5px;
-  //}
-
-  .navbar__button-register::before {
-    display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .navbar__menu-list {
-    font-size: 14px;
-  }
-
-}
-
+//* {
+//  outline: #F75E05 1px solid;
+//}
 

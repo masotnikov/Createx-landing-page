@@ -8,6 +8,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+
+    @include tablet {
+      display: inline-flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
   }
 
   &__item {
@@ -15,11 +22,16 @@
     align-items: center;
     column-gap: 12px;
     white-space: nowrap;
+
+    @include tablet {
+      flex-basis: 85%;
+    }
   }
 
   &__value {
-    font-size: 46px;
+    font-size: clamp(24px, 2.39vw, 46px);
     font-weight: 900;
+
   }
 
   &__dot {
@@ -30,10 +42,16 @@
     flex-shrink: 0;
 
     &:last-of-type {
-      display: none;
+      visibility: hidden;
     }
+
+    @include tablet {
+      &:last-of-type {
+        visibility: visible;
+      }
+    }
+
+
   }
-
-
 
 }
