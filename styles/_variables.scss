@@ -8,18 +8,23 @@
   --grey-color: #424551;
   --dark-grey: #1E212C;
   --light-grey: #787A80;
-;
+  --success-color: #03CEA4;
+  --danger-color: #FF4242;
+  --disabled-color: #9A9CA5;
 
   --font-family: "Lato", "sans-serif";
 
   --wide-container-width: 1920px;
   --container-width: 1200px;
   --container-padding-x: 15px;
+  --container-padding-y: 90px;
 
   --transition-duration: .2s;
 
-  --button-border-radius: 4px;
+  --border-radius: 4px;
   --button-border-hover: 1px solid var(--orange-color);
+
+  --card-border: 1px solid #E5E8ED
 
 
 }

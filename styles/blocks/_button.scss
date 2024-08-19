@@ -2,7 +2,7 @@
   display: inline-flex;
   height: 52px;
   align-items: center;
-  border-radius: var(--button-border-radius);
+  border-radius: var(--border-radius);
   background: var(--btn-background-gradient);
   color: var(--white-color);
   font-weight: 700;
@@ -25,4 +25,11 @@
   @include tablet {
     height: 35px;
   }
+}
+
+.button-disabled {
+  border: 1px solid transparent;
+  color: var(--disabled-color);
+  background: none;
+
 }

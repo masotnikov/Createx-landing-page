@@ -1,6 +1,5 @@
 .courses {
-  padding: 90px 0;
-
+  @include container-padding-y;
 
   &__inner {
     display: flex;
@@ -20,6 +19,7 @@
     font-weight: 700;
     color: var(--dark-grey);
     text-transform: uppercase;
+
   }
 
   &__title {
@@ -33,11 +33,15 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   &__card {
     display: flex;
     max-width: 580px;
+  }
+
+  &__button {
+    align-self: end;
   }
 }

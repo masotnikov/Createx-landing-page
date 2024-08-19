@@ -1,4 +1,4 @@
-@import "normalize", "global", "variables", "fonts", "media";
+@import "normalize", "global", "variables", "fonts", "media", "mixins";
 
 @import
 "blocks/button",
@@ -10,7 +10,8 @@
 "blocks/statistics",
 "blocks/about",
 "blocks/courses",
-"blocks/card"
+"blocks/card",
+"blocks/benefits"
 ;
 
 //* {

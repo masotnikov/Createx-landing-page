@@ -1,3 +1,55 @@
 .card {
+  border-radius: var(--border-radius);
+  border: var(--card-border);
 
+  &__title {
+
+  }
+
+  &__content {
+    padding: 15px;
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__budge {
+    color: var(--white-color);
+    border-radius: var(--border-radius);
+    background-color: var(--success-color);
+    padding: 1px 8px;
+    width: fit-content;
+  }
+
+  &__info {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--danger-color);
+
+  }
+
+  &__speaker {
+    display: flex;
+    color: var(--light-grey);
+    column-gap: 8px;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 1px;
+      height: 60%;
+      justify-content: center;
+      align-self: center;
+      border: 1px solid var(--light-grey);
+      border-radius: 10px;
+
+    }
+
+  }
 }
