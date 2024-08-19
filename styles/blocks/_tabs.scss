@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 60px;
+
+  @include tablet {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  &__item {
+    flex-grow: 1;
+  }
+
+
+  &__button {
+    border: 1px solid transparent;
+    color: var(--disabled-color);
+    background: none;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+ .is-current {
+   color: var(--orange-color);
+   background: transparent;
+   border: var(--button-border-hover);
+  }
+}
+
