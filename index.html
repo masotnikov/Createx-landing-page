@@ -97,8 +97,10 @@
     <div class="about__inner container">
       <div class="about__illustration"></div>
       <div class="about__info">
-        <h6 class="about__description">Who we are</h6>
-        <h1 class="about__title">Why Createx?</h1>
+        <div class="about__heading header-container">
+          <h6 class="about__description header-container__description">Who we are</h6>
+          <h1 class="about__title header-container__title">Why Createx?</h1>
+        </div>
         <ul class="about__list">
           <li class="about__item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
           <li class="about__item">Vulputate placerat amet pulvinar lorem nisl.</li>
@@ -111,11 +113,11 @@
       </div>
     </div>
   </section>
-    <section class="courses">
+  <section class="courses">
     <div class="courses__inner container">
-      <div class="courses__heading">
-        <h6 class="courses__description">Ready to learn?</h6>
-        <h1 class="courses__title">Featured Courses</h1>
+      <div class="courses__heading header-container">
+        <h6 class="courses__description header-container__description">Ready to learn?</h6>
+        <h1 class="courses__title header-container__title">Featured Courses</h1>
         <button class="courses__button button" type="button">View all courses</button>
       </div>
       <ul class="courses__card-list">
@@ -189,9 +191,10 @@
     </div>
   </section>
   <section class="benefits container">
-    <div class="benefits__heading">
-      <h6 class="benefits__description">Our benefits</h6>
-      <h1 class="benefits__title">That’s how we do it</h1>
+    <div class="benefits__heading header-container">
+      <h6 class="benefits__description header-container__description">Our benefits</h6>
+      <h1 class="benefits__title header-container__title
+">That’s how we do it</h1>
     </div>
     <ul class="benefits__tabs-list tabs">
       <li class="tabs__item">
@@ -212,27 +215,32 @@
       </li>
     </ul>
     <div class="benefits__wrapper">
-        <div class="benefits__content">
-          <h2 class="benefits__content-heading">Only practicing tutors</h2>
-          <p class="benefits__content-text">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.</p>
-        </div>
+      <div class="benefits__content">
+        <h2 class="benefits__content-heading">Only practicing tutors</h2>
+        <p class="benefits__content-text">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum
+          suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet
+          massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi
+          tempus vehicula.</p>
+      </div>
       <div class="benefits__illustration"></div>
     </div>
   </section>
   <section class="events">
     <div class="events__wrapper container">
-     <div class="events__heading">
-       <h6 class="events__description">Our Events</h6>
-       <h1 class="events__title">Lectures & workshops</h1>
-     </div>
+      <div class="events__heading header-container">
+        <h6 class="events__description header-container__description">Our Events</h6>
+        <h1 class="events__title header-container__title">Lectures & workshops</h1>
+      </div>
       <ul class="events__list">
         <li class="events__item">
           <div class="events__date date">
             <time class="date__number" datetime="2024-08-05">05</time>
-            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span></time>
+            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span>
+            </time>
           </div>
           <div class="events__info">
-            <p class="events__info-text">Formation of the organizational structure of the company in the face of uncertainty.</p>
+            <p class="events__info-text">Formation of the organizational structure of the company in the face of
+              uncertainty.</p>
             <p class="events__info-group">Onine master-class.</p>
           </div>
           <button class="events__button button">View more</button>
@@ -240,7 +248,8 @@
         <li class="events__item">
           <div class="events__date date">
             <time class="date__number" datetime="2024-08-05">05</time>
-            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span></time>
+            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span>
+            </time>
           </div>
           <div class="events__info">
             <p class="events__info-text">Building a customer service department. Best Practices.</p>
@@ -251,10 +260,12 @@
         <li class="events__item">
           <div class="events__date date">
             <time class="date__number" datetime="2024-08-05">05</time>
-            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span></time>
+            <time class="date__range" datetime="2024-08-05T11:00/2024-08-05T14:00">August <span>11:00 - 14:00</span>
+            </time>
           </div>
           <div class="events__info">
-            <p class="events__info-text">How to apply methods of speculative design in practice. World building prototyping.</p>
+            <p class="events__info-text">How to apply methods of speculative design in practice. World building
+              prototyping.</p>
             <p class="events__info-group">Online workshop</p>
           </div>
           <button class="events__button button">View more</button>
@@ -265,6 +276,26 @@
       <div class="events__view-all">
         <h3 class="view-all__title">Do you want more?</h3>
         <button class="view-all__button button">Explore all events</button>
+      </div>
+    </div>
+  </section>
+  <section class="certificate">
+    <div class="certificate__wrapper container">
+      <div class="certificate__content">
+        <div class="certificate__info">
+          <div class="certificate__heading">
+            <h6>Createx Certificate</h6>
+            <h1>Your expertise will be confirmed</h1>
+          </div>
+          <p class="certificate__accreditation">We are accredited by international professional organizations and
+            institutes:</p>
+          <ul class="certificate__logo-list">
+            <li class="certificate__logo-item">logo</li>
+            <li class="certificate__logo-item">logo</li>
+            <li class="certificate__logo-item">logo</li>
+          </ul>
+        </div>
+        <div class="certificate__image"></div>
       </div>
     </div>
   </section>
