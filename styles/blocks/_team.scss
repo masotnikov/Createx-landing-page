@@ -1,0 +1,18 @@
+.team {
+  margin-top: -35px;
+  background-color: var(--gray-200);
+  padding-top: 166px;
+  padding-bottom: 100px;
+
+}
+
+.tutorials {
+
+  &__heading {
+  text-align: left;
+  }
+
+  &__card-list {
+    display: flex;
+  }
+}

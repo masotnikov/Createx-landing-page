@@ -23,7 +23,7 @@
   }
 
   &__image {
-    background: url("../../images/certificate__image.jpg") center/contain no-repeat;
+    background: url("../../images/certificate__image.jpg") center/cover no-repeat;
     width: 705px;
     height: 500px;
     border: var(--card-border);
