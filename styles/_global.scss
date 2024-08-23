@@ -2,7 +2,7 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.6;
-  color: var(--dark-grey);
+  color: var(--gray-900);
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 .header-container {
   display: flex;
   flex-direction: column;
-  color: var(--dark-grey);
+  color: var(--gray-900);
   row-gap: 8px;
   text-align: center;
 
@@ -55,6 +55,6 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: var(--light-grey);
+    color: var(--gray-700);
   }
 }

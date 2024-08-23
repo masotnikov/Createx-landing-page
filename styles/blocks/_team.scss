@@ -3,16 +3,114 @@
   background-color: var(--gray-200);
   padding-top: 166px;
   padding-bottom: 100px;
-
 }
 
 .tutorials {
 
+  margin-bottom: 180px;
+
   &__heading {
-  text-align: left;
+    text-align: left;
+    margin-bottom: 60px;
   }
 
   &__card-list {
     display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
   }
+
+  &__card-photo {
+    padding: 20px 20px 0;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    height: auto;
+  }
+
+  .card {
+
+    &__figure {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      text-align: center;
+    }
+
+    &__person-name {
+      color: var(--gray-800);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    &__person-position {
+      color: var(--gray-700);
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }
+}
+
+.testimonials {
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 64px 105px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 4px -4px #1E212C08,
+    0px 12px 10px -6px #9A9CA50A,
+    0px 30px 24px -10px #9A9CA50D,
+    0px 80px 80px -20px #9A9CA514;
+  }
+
+  &__braces {
+
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--gray-800);
+
+  }
+
+  .user {
+    max-width: 243px;
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      justify-content: center;
+    }
+
+    &__name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--gray-900);
+    }
+
+    &__position {
+      font-size: 14px;
+      color: var(--gray-700);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+  }
+
 }
