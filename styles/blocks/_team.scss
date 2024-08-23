@@ -54,6 +54,7 @@
 
 .testimonials {
 
+
   &__heading {
     margin-bottom: 60px;
   }
@@ -61,8 +62,11 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "braces text"
+    "braces user";
+    row-gap: 24px;
+    column-gap: 30px;
     padding: 64px 105px;
     background-color: var(--white-color);
     box-shadow: 0 4px 4px -4px #1E212C08,
@@ -72,7 +76,7 @@
   }
 
   &__braces {
-
+    grid-area: braces;
   }
 
   &__text {
@@ -80,6 +84,8 @@
     font-size: 20px;
     line-height: 1.5;
     color: var(--gray-800);
+    grid-area: text;
+
 
   }
 
@@ -88,7 +94,7 @@
     display: flex;
     justify-content: start;
     column-gap: 20px;
-
+    grid-area: user;
 
     &__info {
       display: flex;
@@ -113,4 +119,22 @@
 
   }
 
+  &__dots-list {
+    display: flex;
+    margin-top: 40px;
+    column-gap: 12px;
+    justify-content: center;
+  }
+
+  &__dots-item {
+    width: 30px;
+    border: 3px solid var(--gray-500);
+    border-radius: 4px;
+  }
+
+  .dot-is-current {
+    border: 3px solid var(--gray-800);
+  }
 }
+
+

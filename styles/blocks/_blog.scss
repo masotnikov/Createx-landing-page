@@ -1,0 +1,17 @@
+.blog {
+  background-color: var(--white-color);
+  padding-top: 120px;
+  padding-bottom: 180px;
+
+
+  &__heading {
+    text-align: left;
+    margin-bottom: 60px;
+  }
+
+  &__post-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
