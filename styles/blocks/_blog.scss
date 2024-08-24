@@ -11,7 +11,37 @@
 
   &__post-list {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
+  }
+
+  &__post-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.post {
+  position: relative;
+
+  &__budge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    padding: 1px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--gray-800);
+    display: flex;
+    column-gap: 4px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
   }
 
 }
