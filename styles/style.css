@@ -1001,4 +1001,35 @@ a:hover {
   column-gap: 11px;
 }
 
+.subscribe {
+  background: var(--orange-background-gradient);
+  padding: 120px 0 180px;
+}
+.subscribe__heading {
+  max-width: 810px;
+  margin-inline: auto;
+  margin-bottom: 60px;
+}
+.subscribe__form {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  column-gap: 24px;
+}
+.subscribe__button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 3.25;
+  letter-spacing: 0.5px;
+}
+.subscribe__input {
+  flex-grow: 1;
+  align-self: stretch;
+  border: 1px solid #D7DADD;
+  border-radius: var(--border-radius);
+  padding-inline: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
