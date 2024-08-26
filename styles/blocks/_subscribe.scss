@@ -1,6 +1,7 @@
 .subscribe {
+  position: relative;
   background: var(--orange-background-gradient);
-  padding: 120px 0 180px;
+  padding: 120px 30px 180px;
 
   &__heading {
     max-width: 810px;
@@ -28,8 +29,28 @@
   &__input {
     flex-grow: 1;
     align-self: stretch;
-    border: 1px solid #D7DADD;
+    border: 1px solid var(--gray-400);
     border-radius: var(--border-radius);
     padding-inline: 16px;
+  }
+
+  .image-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../../images/subscribe__illustration.png") center/contain no-repeat;
+    width: 354px;
+    height: 246px;
+    z-index: -1;
+  }
+
+  .image-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../../images/subscribe__illustration.png") center/cover no-repeat;
+    width: 354px;
+    height: 246px;
+    z-index: -1;
   }
 }

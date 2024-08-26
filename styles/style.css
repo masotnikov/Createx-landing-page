@@ -231,6 +231,7 @@ a:hover {
   --gray-800: #424551;
   --gray-700: #787A80;
   --gray-500: #B3B7BC;
+  --gray-400: #D7DADD;
   --gray-200: #F4F5F6;
   --font-family: "Lato", "sans-serif";
   --wide-container-width: 1920px;
@@ -1002,8 +1003,9 @@ a:hover {
 }
 
 .subscribe {
+  position: relative;
   background: var(--orange-background-gradient);
-  padding: 120px 0 180px;
+  padding: 120px 30px 180px;
 }
 .subscribe__heading {
   max-width: 810px;
@@ -1027,9 +1029,27 @@ a:hover {
 .subscribe__input {
   flex-grow: 1;
   align-self: stretch;
-  border: 1px solid #D7DADD;
+  border: 1px solid var(--gray-400);
   border-radius: var(--border-radius);
   padding-inline: 16px;
+}
+.subscribe .image-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("../../images/subscribe__illustration.png") center/contain no-repeat;
+  width: 354px;
+  height: 246px;
+  z-index: -1;
+}
+.subscribe .image-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../../images/subscribe__illustration.png") center/cover no-repeat;
+  width: 354px;
+  height: 246px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
