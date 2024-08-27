@@ -1083,14 +1083,7 @@ a:hover {
 .footer__socials-item a:hover {
   color: var(--white-color);
 }
-.footer .site-map__list,
-.footer .courses-menu__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-}
-.footer .site-map__title,
-.footer .courses-menu__title {
+.footer__menu-title {
   text-transform: uppercase;
   color: var(--white-color);
   font-size: 16px;
@@ -1098,12 +1091,39 @@ a:hover {
   line-height: 1.5;
   letter-spacing: 1px;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
-.footer .site-map__link,
-.footer .courses-menu__link {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.sign-up__input-email {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
+  padding: 9px 12px 9px;
+}
+.sign-up__input-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+.sign-up__input-arrow {
+  color: var(--white-color);
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.contacts__link {
+  display: inline-flex;
+  column-gap: 8px;
+}
+.contacts__link:hover {
+  color: var(--white-color);
 }
 
 /*# sourceMappingURL=style.css.map */

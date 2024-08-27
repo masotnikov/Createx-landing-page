@@ -22,7 +22,7 @@
     margin-bottom: 38px;
   }
 
-  &__socials-list {
+    &__socials-list {
     display: flex;
     column-gap: 20px;
   }
@@ -35,20 +35,8 @@
     }
   }
 
-  //.site-map {
-  //  display: flex;
-  //  flex-direction: column;
-  //}
-  .site-map__list,
-  .courses-menu__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-  }
 
-
-  .site-map__title,
-  .courses-menu__title {
+  &__menu-title {
     text-transform: uppercase;
     color: var(--white-color);
     font-size: 16px;
@@ -56,14 +44,52 @@
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 12px;
+    white-space: nowrap;
   }
 
-  .site-map__link,
-  .courses-menu__link {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
   }
-
-
 }
+
+
+.sign-up {
+
+  &__input-email {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 9px 12px 9px;
+
+  }
+
+  &__input-label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__input-arrow {
+    color: var(--white-color);
+    position: absolute;
+    top: 10px;
+    right: 14px;
+
+  }
+}
+
+
+.contacts__link {
+  display: inline-flex;
+  column-gap: 8px;
+
+  &:hover {
+    color: var(--white-color);
+  }
+}
+
+
+
