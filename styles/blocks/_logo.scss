@@ -1,9 +1,5 @@
 .logo {
   flex-shrink: 0;
 
-  @include laptop {
-    display: inline-flex;
-    justify-content: center;
-    flex-basis: 100%;
-  }
+
 }

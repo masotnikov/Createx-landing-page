@@ -3,6 +3,16 @@
   padding-top: 20px;
   padding-bottom: 80px;
 
+  &__logo {
+
+
+    @include laptop {
+      display: inline-flex;
+      justify-content: center;
+      flex-basis: 100%;
+    }
+  }
+
   &__banner {
     margin-top: 8%;
   }
@@ -13,9 +23,8 @@
     @include tablet {
       padding-top: 20px;
 
-      }
+    }
   }
-
 
 
 }
