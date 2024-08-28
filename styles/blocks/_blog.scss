@@ -11,12 +11,14 @@
 
   &__post-list {
     display: flex;
-    column-gap: 30px;
+    column-gap: 5px;
+    justify-content: space-between;
   }
 
   &__post-item {
     display: flex;
     flex-direction: column;
+    max-width: 390px;
   }
 }
 
@@ -26,17 +28,26 @@
   flex-direction: column;
   row-gap: 12px;
 
+  &__image {
+    object-fit: contain;
+    height: 100%;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
     color: var(--gray-900);
+
+
+    @include tablet {
+      font-size: 15px;
+    }
   }
 
   &__description {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
     color: var(--gray-800);
   }
 
@@ -63,8 +74,14 @@
 
   &__data-list {
     display: flex;
+    flex-wrap: wrap;
     color: var(--gray-700);
-    column-gap: 12px;
+    column-gap: 5px;
+    justify-content: space-around;
+
+    @include laptop {
+      flex-direction: column;
+    }
   }
 
   &__data-item,
@@ -79,6 +96,10 @@
     width: 1px;
     border: 1px solid currentColor;
     align-self: center;
+
+    @include laptop {
+      display: none;
+    }
   }
 
   .icon__left-arrow {

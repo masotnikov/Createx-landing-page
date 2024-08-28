@@ -6,6 +6,7 @@
     flex-direction: column;
     row-gap: 60px;
   }
+
   &__description {
     flex-basis: 100%;
   }
@@ -18,8 +19,6 @@
   }
 
 
-
-
   &__card-list {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +29,10 @@
   &__card {
     display: flex;
     max-width: 580px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__button {

@@ -575,6 +575,11 @@ a:hover {
   display: flex;
   max-width: 580px;
 }
+@media (max-width: 425px) {
+  .courses__card {
+    flex-direction: column;
+  }
+}
 .courses__button {
   align-self: end;
 }
@@ -659,8 +664,6 @@ a:hover {
 }
 .benefits__content-text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
 }
 .benefits__illustration {
   background: url("../../images/benefits__illustration-image.png") top/contain no-repeat;
@@ -737,8 +740,6 @@ a:hover {
 }
 .events__info-group {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
   color: var(--gray-700);
 }
 .events__view-all {
@@ -766,8 +767,6 @@ a:hover {
 }
 .date__range span {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
   color: var(--gray-700);
   white-space: nowrap;
 }
@@ -855,8 +854,6 @@ a:hover {
 }
 .tutorials .card__person-position {
   color: var(--gray-700);
-  font-size: 16px;
-  line-height: 1.6;
   font-weight: 400;
 }
 
@@ -933,11 +930,13 @@ a:hover {
 }
 .blog__post-list {
   display: flex;
-  column-gap: 30px;
+  column-gap: 5px;
+  justify-content: space-between;
 }
 .blog__post-item {
   display: flex;
   flex-direction: column;
+  max-width: 390px;
 }
 
 .post {
@@ -946,16 +945,24 @@ a:hover {
   flex-direction: column;
   row-gap: 12px;
 }
+.post__image {
+  object-fit: contain;
+  height: 100%;
+}
 .post__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   color: var(--gray-900);
 }
+@media (max-width: 768px) {
+  .post__title {
+    font-size: 15px;
+  }
+}
 .post__description {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
   color: var(--gray-800);
 }
 .post__content {
@@ -979,8 +986,15 @@ a:hover {
 }
 .post__data-list {
   display: flex;
+  flex-wrap: wrap;
   color: var(--gray-700);
-  column-gap: 12px;
+  column-gap: 5px;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .post__data-list {
+    flex-direction: column;
+  }
 }
 .post__data-item, .post__icon {
   display: flex;
@@ -992,6 +1006,11 @@ a:hover {
   width: 1px;
   border: 1px solid currentColor;
   align-self: center;
+}
+@media (max-width: 1024px) {
+  .post__divider {
+    display: none;
+  }
 }
 .post .icon__left-arrow {
   color: var(--primary-color);
@@ -1059,12 +1078,17 @@ a:hover {
   display: block;
   margin-bottom: 24px;
 }
+@media (max-width: 1024px) {
+  .footer__about {
+    display: none;
+  }
+}
 .footer__content {
   color: rgba(255, 255, 255, 0.6);
   display: flex;
   padding-top: 80px;
   padding-bottom: 60px;
-  column-gap: 80px;
+  justify-content: space-between;
 }
 .footer__about-text {
   max-width: 279px;
@@ -1099,6 +1123,59 @@ a:hover {
   row-gap: 8px;
 }
 
+.site-map {
+  max-width: 79px;
+}
+
+.courses-menu {
+  max-width: 109px;
+}
+
+.contacts {
+  max-width: 163px;
+}
+.contacts__link {
+  display: inline-flex;
+  column-gap: 8px;
+}
+.contacts__link:hover {
+  color: var(--white-color);
+}
+
+.copyright {
+  display: flex;
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 58px;
+  background: rgba(40, 44, 58, 0.9);
+}
+.copyright__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.copyright__text {
+  display: inline-flex;
+  column-gap: 4px;
+}
+.copyright__heart-icon {
+  color: var(--primary-color);
+}
+.copyright__go-to-top {
+  text-transform: uppercase;
+}
+
+.sign-up {
+  max-width: 286px;
+}
+@media (max-width: 1024px) {
+  .sign-up {
+    display: none;
+  }
+}
 .sign-up__input-email {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1116,14 +1193,6 @@ a:hover {
   position: absolute;
   top: 10px;
   right: 14px;
-}
-
-.contacts__link {
-  display: inline-flex;
-  column-gap: 8px;
-}
-.contacts__link:hover {
-  color: var(--white-color);
 }
 
 /*# sourceMappingURL=style.css.map */
