@@ -3,10 +3,18 @@
   background: var(--orange-background-gradient);
   padding: 120px 30px 180px;
 
+  @include mobile {
+    padding: 30px 25px 30px;
+  }
+
   &__heading {
     max-width: 810px;
     margin-inline: auto;
     margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -16,6 +24,11 @@
     justify-content: space-between;
     margin-inline: auto;
     column-gap: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 10px;
+    }
   }
 
   &__button {
@@ -42,6 +55,10 @@
     width: 354px;
     height: 246px;
     z-index: -1;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .image-2 {
@@ -52,5 +69,9 @@
     width: 354px;
     height: 246px;
     z-index: -1;
+
+    @include mobile {
+      display: none;
+    }
   }
 }

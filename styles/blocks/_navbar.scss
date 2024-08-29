@@ -10,6 +10,8 @@
   }
 
   &__menu {
+    flex-grow: 1;
+
     @include tablet {
       flex-basis: 100%;
     }
@@ -17,20 +19,19 @@
 
   &__menu-list {
     display: flex;
-    column-gap: 40px;
-    padding-inline: 4px;
+    padding-inline: 45px;
+    justify-content: space-around;
 
-    @include laptop {
-      column-gap: 25px;
-    }
 
     @include tablet {
+      padding-inline: 10px;
       justify-content: space-around;
-      column-gap: 5px;
     }
 
     @include mobile {
-      font-size: 14px;
+      font-size: 24px;
+      text-align: center;
+      flex-direction: column;
     }
   }
 

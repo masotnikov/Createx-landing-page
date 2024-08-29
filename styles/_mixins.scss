@@ -1,4 +1,10 @@
 @mixin container-padding-y {
   padding-top: var(--container-padding-y);
   padding-bottom: var(--container-padding-y);
+
+  @include laptop{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
 }

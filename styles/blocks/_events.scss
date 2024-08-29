@@ -3,13 +3,16 @@
   background: var(--orange-background-gradient);
 
 
+  @include tablet {
+    padding: 40px 0;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.5;
     margin-top: 60px;
   }
 
@@ -49,6 +52,10 @@
     align-items: center;
     column-gap: 40px;
     margin-top: 40px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
 }

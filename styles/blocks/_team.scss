@@ -1,13 +1,21 @@
 .team {
   margin-top: -35px;
   background-color: var(--gray-200);
-  padding-top: 166px;
-  padding-bottom: 100px;
+  padding: 166px 0 100px;
+
+  @include tablet {
+    padding: 80px 0 50px;
+  }
 }
 
 .tutorials {
 
   margin-bottom: 180px;
+
+  @include tablet {
+    margin-bottom: 80px;
+  }
+
 
   &__heading {
     text-align: left;
@@ -18,6 +26,10 @@
     display: flex;
     column-gap: 15px;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__card-photo {
@@ -25,6 +37,7 @@
     background: var(--secondary-color);
     border-radius: var(--border-radius);
     height: auto;
+    margin-inline: auto;
   }
 
   .card {
@@ -40,7 +53,6 @@
       color: var(--gray-800);
       font-weight: 700;
       font-size: 20px;
-      line-height: 1.5;
     }
 
     &__person-position {
@@ -60,6 +72,8 @@
 
   &__content {
     display: grid;
+    margin-inline: auto;
+    max-width: 1020px;
     grid-template-areas:
     "braces text"
     "braces user";
@@ -71,6 +85,11 @@
     0px 12px 10px -6px #9A9CA50A,
     0px 30px 24px -10px #9A9CA50D,
     0px 80px 80px -20px #9A9CA514;
+
+    @include tablet {
+      padding: 15px 20px;
+      column-gap: 5px;
+    }
   }
 
   &__braces {
@@ -80,7 +99,6 @@
   &__text {
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
     color: var(--gray-800);
     grid-area: text;
 
@@ -104,7 +122,6 @@
     &__name {
       font-weight: 700;
       font-size: 16px;
-      line-height: 1.5;
       color: var(--gray-900);
     }
 
@@ -112,7 +129,6 @@
       font-size: 14px;
       color: var(--gray-700);
       font-weight: 400;
-      line-height: 1.5;
     }
 
   }
