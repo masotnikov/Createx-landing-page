@@ -27,7 +27,7 @@
 
   &__illustration {
 
-    background: url("../../images/about-image.png") center/cover no-repeat;
+    background: url("../images/about-image.png") center/cover no-repeat;
     width: 705px;
 
     @include tablet {
@@ -48,7 +48,7 @@
     &::before {
       content: "";
       display: inline-flex;
-      background: url("../../icons/check.svg") center/contain no-repeat;
+      background: url("../icons/check.svg") center/contain no-repeat;
       width: 15px;
       aspect-ratio: 1;
       margin-right: 8px;

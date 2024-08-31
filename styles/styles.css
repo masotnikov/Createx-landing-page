@@ -181,7 +181,7 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--gray-900);
-  row-gap: 8px;
+  row-gap: 10px;
   text-align: center;
 }
 .header-container__title {
@@ -238,7 +238,7 @@ a:hover {
   --transition-duration: .2s;
   --border-radius: 4px;
   --button-border-hover: 1px solid var(--orange-color);
-  --card-border: 1px solid #E5E8ED ;
+  --card-border: 1px solid #E5E8ED;
 }
 
 @font-face {
@@ -403,7 +403,7 @@ a:hover {
   justify-content: space-between;
 }
 .banner__illustration {
-  background: url("../../images/illustration.png") center/contain no-repeat;
+  background: url("../images/illustration.png") center/contain no-repeat;
   width: 551px;
 }
 @media (max-width: 424px) {
@@ -433,7 +433,7 @@ a:hover {
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
-  background: url("../../icons/Play-Button.svg") center/contain no-repeat;
+  background: url("../icons/Play-Button.svg") center/contain no-repeat;
 }
 .play-button:hover {
   box-shadow: 0 0 0 16px rgba(255, 63, 58, 0.2);
@@ -524,7 +524,7 @@ a:hover {
   }
 }
 .about__illustration {
-  background: url("../../images/about-image.png") center/cover no-repeat;
+  background: url("../images/about-image.png") center/cover no-repeat;
   width: 705px;
 }
 @media (max-width: 768px) {
@@ -544,7 +544,7 @@ a:hover {
 .about__item::before {
   content: "";
   display: inline-flex;
-  background: url("../../icons/check.svg") center/contain no-repeat;
+  background: url("../icons/check.svg") center/contain no-repeat;
   width: 15px;
   aspect-ratio: 1;
   margin-right: 8px;
@@ -682,7 +682,7 @@ a:hover {
   font-weight: 400;
 }
 .benefits__illustration {
-  background: url("../../images/benefits__illustration-image.png") top/contain no-repeat;
+  background: url("../images/benefits__illustration-image.png") top/contain no-repeat;
   width: 600px;
   height: 440px;
 }
@@ -822,7 +822,7 @@ a:hover {
   }
 }
 .certificate__image {
-  background: url("../../images/certificate__image.jpg") center/contain no-repeat;
+  background: url("../images/certificate__image.jpg") center/contain no-repeat;
   width: 705px;
   height: 500px;
   border: var(--card-border);
@@ -1141,7 +1141,7 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: url("../../images/subscribe__illustration.png") center/contain no-repeat;
+  background: url("../images/subscribe__illustration.png") center/contain no-repeat;
   width: 354px;
   height: 246px;
   z-index: -1;
@@ -1155,7 +1155,7 @@ a:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  background: url("../../images/subscribe__illustration.png") center/cover no-repeat;
+  background: url("../images/subscribe__illustration.png") center/cover no-repeat;
   width: 354px;
   height: 246px;
   z-index: -1;
@@ -1299,4 +1299,4 @@ a:hover {
   right: 14px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

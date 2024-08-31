@@ -1,4 +1,4 @@
-@import "normalize", "global", "variables", "fonts", "media", "mixins";
+@import "global/normalize", "global/global", "global/variables", "global/fonts", "global/media", "global/mixins";
 
 @import
 "blocks/button",
@@ -20,8 +20,3 @@
 "blocks/subscribe",
 "blocks/footer"
 ;
-//
-//* {
-//  outline: #F75E05 1px solid;
-//}
-
