@@ -3,7 +3,7 @@
   justify-content: space-between;
 
   &__illustration {
-    background: url("../images/illustration.png") center/contain no-repeat;
+    background: url("@/images/illustration.png") center/contain no-repeat;
     width: 551px;
 
     @include above-mobile {

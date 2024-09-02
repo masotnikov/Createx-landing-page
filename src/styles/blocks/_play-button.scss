@@ -4,7 +4,7 @@
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
-  background: url("../icons/Play-Button.svg") center/contain no-repeat;
+  background: url("@/icons/Play-Button.svg") center/contain no-repeat;
 
   &:hover {
     box-shadow: 0 0 0 16px rgba(#FF3F3A, .2);

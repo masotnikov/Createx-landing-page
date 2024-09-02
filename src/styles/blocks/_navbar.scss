@@ -71,7 +71,7 @@
   }
 
   .login-icon {
-    mask: url("../../icons/login-icon.svg") no-repeat center;
+    mask: url("@/icons/login-icon.svg") no-repeat center;
     background-color: currentColor;
     width: 24px;
     aspect-ratio: 1;
